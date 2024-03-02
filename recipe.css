@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(food.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    color: white;
+}
+
+header {
+    background-color: #f80a21;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content {
+    max-width: 1000px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center the items horizontally */
+}
+
+.state_category {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100%; /* Ensure each recipe card takes the full width of the column */
+}
+
+.state_category img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+
+.state_category h4 {
+    margin-top: 10px;
+}
+
+/* Additional styling for links */
+.state_category a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.state_category a:hover {
+    color: #ff7200;
+}

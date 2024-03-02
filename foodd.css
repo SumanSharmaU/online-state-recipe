@@ -1,0 +1,130 @@
+.wrapper{
+    display: flex;
+}
+
+.left, .right {
+  flex: 1; /* Distribute available space equally */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding in total width */
+  border: 1px solid #ccc; /* Optional: Add borders for visual separation */
+  width: 300px;
+}
+.wrapper h2{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  background-color: rgb(210, 24, 24);
+}
+.wrapper h2:hover{
+  color:#FFBF59;
+}
+.textarea{
+  width: 450px;
+  height: 250px;
+  margin-left:100px;
+  margin-bottom: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: none;
+}
+
+.textarea1{
+  width: 450px;
+  height: 250px;
+  margin-left:100px;
+  margin-bottom: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: none;
+}
+
+
+.input {
+    color: black;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input:focus + .input-border {
+    width: 100%;
+  }
+  
+  .form-control {
+    position: relative;
+    --width-of-input: 300px;
+    left: 20px;
+    down: 200px;
+   
+  }
+  .right h1{
+    font-size: 25px;
+    margin-left:100px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .right h3{
+    font-size: 25px;
+    margin-left:100px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .input-border-alt {
+    height: 3px;
+    background: 90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%;
+    transition: 0.42, 0, 0.58, 1.00;
+  }
+  
+  .input-alt:focus + .input-border-alt {
+    width: 100%;
+  }
+  
+  .img-foodd{
+    width: 550px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 10px;
+  }
+  
+.video-container {
+    position: relative;
+    width: 550px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive sizing */
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 20px;   
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

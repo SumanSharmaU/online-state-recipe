@@ -1,0 +1,108 @@
+/* Center-align the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('food.jpg'); /* Correct image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(240, 240, 240, 0.8); /* Background color with opacity */
+}
+
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the container fill the viewport height */
+}
+
+/* Style the form */
+form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #929292;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+label {
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"]{
+    width: fit-content;
+    width: 300px; /* Use 100% width to adapt to the container */
+    height: 30px; /* Set a minimum height */
+    padding: 10px; /* Add padding to all sides */
+    background: #d2d2d2;
+    resize: none; /* Allow vertical and horizontal resizing */
+    overflow: auto; /* Add scrollbars when content overflows */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Add a border for clarity */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+/* Style the textareas */
+textarea {
+    width: fit-content;
+    width: 300px; /* Use 100% width to adapt to the container */
+    height: 90px; /* Set a minimum height */
+    padding: 10px; /* Add padding to all sides */
+    resize: none; /* Allow vertical and horizontal resizing */
+    overflow: auto; /* Add scrollbars when content overflows */
+    background: #d2d2d2;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Add a border for clarity */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Change to your desired button color */
+    color: #ffffff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Change to your desired hover color */
+}
+
+h1 {
+    font-size: 72px; /* Adjust the font size as desired */
+    margin: 0; /* Remove default margin */
+    /*padding: 20px; /* Add some padding for text readability */
+    background-image: linear-gradient(to right, #ff0000, #ff8800, #ffff00, #66ff00,#00ffff,#0000ff); /* Gradient colors */
+    background-clip: text; /* Apply gradient to text only */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    color: transparent; /* Hide the actual text color */
+    padding-bottom: 220px;
+    padding-right: 150px;
+}
+
+/* Add this CSS to style the success message */
+/* Updated CSS for the success message */
+.success-message{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto; /* Center horizontally */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Limit the width of the message box */
+}
+

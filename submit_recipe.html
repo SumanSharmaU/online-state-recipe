@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Recipe</title>
+    <link rel="stylesheet" type="text/css" href="submit_recipe.css">
+    <style>
+        /* Add CSS rule for consistent font style */
+        input[type="text"],
+        input[type="url"],
+        textarea {
+            font-family: Arial, sans-serif; /* Change the font family to your preference */
+            font-size: 16px; /* Change the font size to your preference */
+        }
+    </style>
+</head>
+<body>
+    <h1>Submit Your Recipe</h1>
+    <form action="submit_recipe.php" method="post" enctype="multipart/form-data">
+        <label for="title">Recipe Title:</label>
+        <input type="text" name="title" required><br>
+        
+        <label for="ingredients">Ingredients:</label>
+        <textarea name="ingredients" required></textarea><br>
+        
+        <label for="instructions">Instructions:</label>
+        <textarea name="instructions" required></textarea><br>
+
+        <label for="image">Image:</label>
+        <input type="file" name="image"><br>
+
+        <label for="image_url">Image URL:</label>
+        <input type="url" name="image_url"><br>
+
+        <label for="video">YouTube Video Link:</label>
+        <input type="url" name="video"><br>
+
+         <!-- Add the select box for the state -->
+         <label for="state">Select State:</label>
+         <select name="state" required>
+             <option value="None">Select state</option>
+             <option value="Bihar">Bihar</option>
+             <option value="Karnataka">Karnataka</option>
+             <option value="Punjab">Punjab</option>
+             <option value="Tamil Nadu">Tamil Nadu</option>
+             <option value="Kerala">Kerala</option>
+             <option value="Rajasthan">Rajasthan</option>
+             <option value="Maharashtra">Maharashtra</option>
+             <option value="Andhra Pradesh">Andhra Pradesh</option>
+             <!-- Add more state options here as needed -->
+         </select><br>
+        
+        <input type="submit" value="Submit Recipe">
+    </form>
+</body>
+</html>

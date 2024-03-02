@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(food.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    color: white;
+  }
+  
+  figure{
+    text-align: center;
+  }
+  
+  
+  button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: black;
+    font-size: 50px;
+    border-radius: 2em;
+    padding: 0.75em 1em;
+    background: #ff7200;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 25px;
+  }
+  
+ 
+  
+.state_category{
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;   
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+  .state_category img{
+  height: 150px;
+  width: 220px;
+  border: 2px solid silver;
+  opacity: 0.8;
+  margin-left: 70px;
+  margin-right: 10px;
+  margin-top:40px ;
+  }
+  .state_category img:hover{
+    height: 180px;
+    width: 250px;
+    border: 2px solid silver;
+   transform:(2,2) ;
+   transition: all 0.4s linear;
+  }
+
+  .state_category h4{
+    text-align: center;
+    font-size: medium;
+    
+  }
+
+
+  .content h2{
+    text-align: center;
+    font-size: 25px;
+    background: #ff7200;
+  }
+  

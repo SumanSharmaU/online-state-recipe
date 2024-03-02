@@ -1,0 +1,57 @@
+/* admin_styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.recipe-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.recipe h2 {
+    color: #333;
+}
+
+.recipe p {
+    margin: 10px 0;
+}
+
+form {
+    display: flex; /* Use flexbox for button arrangement */
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: flex-start; /* Align buttons to the left */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin to separate buttons */
+    width: 100px; /* Set button width */
+}
+
+button[name="refuse"] {
+    background-color: red; /* Change the "Refuse" button color to red */
+}
+
+select {
+    margin-bottom: 10px; /* Add space between the dropdown and buttons */
+}
